@@ -16,9 +16,12 @@ This is a simple demo for gulp project. It contains a basic folder structure and
 - gulp-cache: 缓存文件
 - gulp-minifycss: 压缩css
 
+### what it can do
+- cross browsers. do not need install livereload browser plugin.
+
+
         
 ### how to use
-
 
 install gulp in the global environment to use CLI of gulp
 

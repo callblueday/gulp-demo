@@ -73,7 +73,8 @@ gulp.task('default', ['clear'], function() {
 
 // Watch
 gulp.task('watch', function() {
-    gulp.watch('*.html', ['html']);
+    gulp.start('default');
+
     gulp.watch('css/*.styl', ['css']);
     gulp.watch('js/*.js', ['js']);
     gulp.watch('images/*.*', ['images']);
@@ -82,5 +83,5 @@ gulp.task('watch', function() {
     livereload.listen();
     
     // Watch any files in assets/, reload on change
-    gulp.watch(['assets/**']).on('change', livereload.changed);
+    gulp.watch(['assets/**', '**/*.html']).on('change', livereload.changed);
 });
