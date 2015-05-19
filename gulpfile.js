@@ -12,7 +12,7 @@ var cache = require('gulp-cache');
 var rename = require('gulp-rename');
 var del = require("del");
 var livereload = require('gulp-livereload');
-var notify = require('gulp-notify');
+var notify = require('gulp-notify');    
 
 // Styles
 gulp.task('css', function() {
